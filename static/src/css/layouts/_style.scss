@@ -10,6 +10,10 @@ main{
     margin-bottom: 40vh;
 }
 
+input, button, a{
+    outline: none;
+}
+
 @media screen and (max-width: 700px){
     main{
         margin-bottom: 100vh;

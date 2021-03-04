@@ -1,0 +1,140 @@
+//******* Bnner style start ******//
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Oswald:wght@200&display=swap');
+
+
+#banner{
+  height: 100vh;
+  width: 100vw;
+}
+
+// #banner .banner-img{
+//   opacity: .95;
+// }
+
+#banner .banner-img{
+  width: 100%;
+  height: 100%;
+}
+
+#banner .banner-img img{
+  width: 100%;
+  height: 100%;
+}
+
+#banner .banner-text{
+  position: absolute;
+  letter-spacing: 3px;
+  cursor: default;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  opacity: 1;
+  display: flex;
+}
+
+#banner .banner-text h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+#banner .banner-text .text1{
+  animation: typer 3s  1.4s 2 alternate ease-in-out;
+}
+#banner .banner-text .text2{
+  animation: typer2 3s  6s 2 alternate ease-in-out;
+}
+#banner .banner-text .text3{
+  animation: typer3 3s  11s 2 alternate ease-in-out;
+}
+#banner .banner-text .text4{
+  animation: typer3 5s  18s infinite alternate ease-in-out;
+}
+
+#banner .banner-text .cursor{
+  height: 55px;
+  width: 3px;
+  background-color: #fff;
+  opacity: 0;
+  animation: cursorType 500ms 20s infinite;
+
+}
+
+
+//****** text 1*****/
+@keyframes typer{
+  from{
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursorType{
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+//*** text 2*****//
+@keyframes typer2{
+  from{
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursorType2{
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+//****** text 3 ****//
+@keyframes typer3{
+  from{
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursorType3{
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+
+/***** media query ******/
+@media screen and (max-width: 720px){
+  #banner .banner-text h2{
+    font-size: 2rem;
+  }
+  #banner .banner-text .cursor{
+    height: 40px;
+    width: 2px;
+  }
+}

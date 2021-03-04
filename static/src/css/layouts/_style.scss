@@ -1,0 +1,17 @@
+//*** Code from style.scss *****//
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background: linear-gradient(to top right,rgb(199, 229, 233),rgb(241, 243, 243));
+    z-index: 100;
+    margin-bottom: 40vh;
+}
+
+@media screen and (max-width: 700px){
+    main{
+        margin-bottom: 100vh;
+    }
+}

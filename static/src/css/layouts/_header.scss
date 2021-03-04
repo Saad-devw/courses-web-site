@@ -1,0 +1,155 @@
+
+nav {
+  background-color: rgb(92, 92, 88);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 52px;
+  min-height: 5vh;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+}
+
+.stikky{
+  background-color: #2F2F31;
+  color: whitesmoke;
+}
+
+nav a, nav a:hover{
+  text-decoration: none;
+}
+
+nav a{
+  color: rgb(70, 68, 68);
+  transition: all .8s ease;
+}
+
+nav a:hover{
+  color: rgb(8, 158, 218);
+}
+
+.logo {
+  color: rgb(128, 123, 123);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  position: relative;
+  top: -3px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links a:hover{
+  color: rgba(66, 175, 248, 0.933);
+  transition: all .5s ease 0s;
+  background-color: rgba($color: #e9dede, $alpha: 0.1);
+  padding: 10px;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  top: -8px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin:5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+      width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      overflow-x: hidden;
+  }
+  
+  nav .nav-links {
+      position: fixed;
+      right: 0px;
+      top: 52px;
+      height: 92vh;
+      background-color: rgba($color: #2F2F31, $alpha: .8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+  }
+  
+  nav .nav-links li {
+    opacity: 0;
+  }
+
+  nav .nav-links li a{
+    color: rgb(235, 230, 230);
+    font-weight: 900;
+  }
+
+  nav .nav-links li a:hover{
+    background-color: rgba($color: #c9a0a0, $alpha: 0.1);
+    padding: 10px;
+  }
+  
+  nav .burger {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+nav .nav-active {
+      transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+

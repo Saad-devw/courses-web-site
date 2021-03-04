@@ -1,0 +1,17 @@
+{
+  "name": "avenir",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.4.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./static/src/css/app.scss static/css/style.css --watch"
+  },
+  "author": "saad",
+  "license": "ISC"
+}

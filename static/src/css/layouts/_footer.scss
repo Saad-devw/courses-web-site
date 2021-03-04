@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Oswald:wght@200&display=swap');
+
+#footer {
+    height: 40vh;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-y: visible;
+}
+
+#footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+#footer h4{
+    font-family: 'Oswald', monospace;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#footer a, #footer a:hover{
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+#footer a{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#footer a:hover{
+    color: rgb(7, 112, 131);
+    background-color: rgb(221, 214, 214);
+    padding: 5px;
+}
+
+#footer .row .col-sm-3{
+    border-right: 1px solid rgb(131, 131, 131);
+    border-width: 10px;
+    padding-top: 20px;
+}
+
+#footer .row .col-sm-3:nth-child(4){
+    border: none;
+}
+
+#footer #join > li a{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+#footer #join > li a:hover{
+    color: rgb(7, 112, 131);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+    #footer {
+        height: 100vh;
+        padding-top: 40px;
+    }
+
+    #footer .row .col-sm-3{
+        border: none;
+    }
+}
